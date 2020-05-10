@@ -30,20 +30,18 @@ option {font-family: AppleGothic;
   line-height: 15.4px;
   letter-spacing: 1.5px;
 margin: auto;}
-/* Dropdown Button */
+
 .dropbtn {
   background-color: white;
   color: black;
   border-color: black;
 }
 
-/* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
   background-color: black;
   color: white;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -52,7 +50,7 @@ margin: auto;}
 #butt {
   margin-left: 42px;
 }
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -63,7 +61,6 @@ margin: auto;}
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -75,5 +72,4 @@ margin: auto;}
 .dropdown-content a:hover {background-color: black
 color: white;}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
