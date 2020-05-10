@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Corona</title>
+    <!-- Always include D3 first. -->
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+    <!-- Include main.js, which is where all our code lives -->
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Include any styles we want to add to our page -->
+    <link rel="stylesheet" href="stylehack.css">
+</head>
+<body onload = "start()">
+    <h1 id="title">Covid Test Simulation</h1>
+    <!-- Our graph will be added inside this divider element -->
+    <div id="graph"></div>
+    <div id="drops"></div>
+    <div class="dropdown">
+      <label for="categorySelect" class="show">Cost: </label>
+      <select class="custom-select" id="categorySelect1" onchange="on1()">
+        <option value="cost150">less than $150</option>
+        <option value="cost300">less than $300</option>
+        <option value="cost450">less than $450</option>
+        <option selected value="costoff">no preference</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="categorySelect" class="show">Availability: </label>
+      <select class="custom-select" id="categorySelect2" onchange="on2()">
+        <option value="mile25">within 25 miles</option>
+        <option value="mile50">within 50 miles</option>
+        <option value="mile100">within 100 miles</option>
+        <option selected value="mileoff">no preference</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="categorySelect" class="show">Efficiency: </label>
+      <select class="custom-select" id="categorySelect3" onchange="on3()">
+        <option value="timeu15">under 15 minutes</option>
+        <option value="timeu40">under 40 minutes</option>
+        <option value="timeuh">under an hour</option>
+        <option selected value="timeoff">no preference</option>
+      </select>
+    </div>
+    <button id = "butt" type="button" onclick="filterTests()">Filter Test Options</button>
+    </div>
+    <br>
+    </br>
+    <div class="dropdown" id = "testdrop">
+      <label for="categorySelect" class="show">Test Selection: </label>
+      <select class="custom-select" id="categorySelect4" onchange="on4()">
+        <option selected value="testNull">Choose One:</option>
+        <option value="ID NOW (Abbott)">ID NOW (Abbott)</option>
+        <option value="DiaSorin Simplexa">DiaSorin Simplexa</option>
+        <option value="Roche">Roche</option>
+        <option value="Cepheid">Cepheid</option>
+      </select>
+    </div>
+</body>
+</html>
