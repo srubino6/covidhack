@@ -1,6 +1,6 @@
 # Pandemio
 
-Pandemio is a WIP website designed to combat the shroud surrounding COVID testkits.
+Pandemio is a WIP website designed to combat the shroud surrounding COVID test kits.
 
 ## Adobe XD
 
